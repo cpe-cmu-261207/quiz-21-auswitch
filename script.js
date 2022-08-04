@@ -7,7 +7,7 @@ const uc = document.querySelector("#div-user-card")
 const lopro = document.querySelector("#div-loading-card")
 const gender = document.querySelector("#span-gender-icon")
 
-
+callApi();
 
 async function callApi() 
 {

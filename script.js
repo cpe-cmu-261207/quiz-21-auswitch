@@ -14,8 +14,9 @@ async function callApi()
 
 callApi();
 
-Random.onclick = () =>
+Random.onclick =  async ()=>
 {
   uc.style.display = "none";
+  const resp = await axios.get("https://randomuser.me/api")
   namee.innerText = resp.data.name;
 };
